@@ -10,4 +10,6 @@
 
 @interface Popup : NSObject
 
++(Popup *)Instance;
+
 @end

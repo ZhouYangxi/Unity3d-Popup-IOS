@@ -10,4 +10,19 @@
 
 @implementation Popup
 
++(Popup *)Instance
+{
+    static Popup * instance;
+    
+    @synchronized(self)
+    {
+        if(instance == nil)
+        {
+            instance = [[Popup alloc] init];
+        }
+    }
+    
+    return instance;
+}
+
 @end
