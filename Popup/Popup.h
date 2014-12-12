@@ -12,4 +12,6 @@
 
 +(Popup *)Instance;
 
+extern void UnitySendMessage(const char* _objName, const char* _callBackName, const char* _paramsInString);
+
 @end
